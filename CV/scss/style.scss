@@ -1,0 +1,453 @@
+// === Variables ===
+$border-color: #eee;
+$primary-text-color: #282828;
+$secondary-text-color: #fff;
+$secondary-back-color: #1a1e23;
+$primary-decoration-color: #68c3a3;
+$secondary-decoraion-color: #3c763d;
+// === / Variables ===
+
+// === Mixins ===
+@mixin montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+// === / Mixins ===
+
+// === / Commons ===
+* {
+  box-sizing: border-box;
+}
+html,body {
+  padding: 0;
+  margin: 0;
+  @include montserrat;
+  
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+a {
+  text-decoration: none;
+}
+.section-outer {
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+.section-inner {
+    max-width: 1180px;
+    margin: 120px auto;
+    
+}
+
+h2 {
+    
+    padding-bottom: 30px;
+    text-align: center;
+}
+// === / Commons ===
+
+// === Nvigation ===
+.navigation {
+  
+  position: sticky;
+  top: 0;
+  height: 70px;
+  background-color: #fff;
+  z-index: 100;
+  border-bottom: 1px solid $border-color; //можно тень забахать
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+}
+// === / Nvigation ===
+
+// === About ===
+.section-about {
+  
+  //background-image: url("../img/kekes.jpg");
+  position: relative;
+
+  .about-content {
+    display: flex;
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 70%;
+      padding-right: 50px;
+      
+      
+      .text {
+        padding-left: 20px;
+      }
+      
+      .interests {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        .interests-item {
+          padding-left: 20px;
+          width: 50%;          
+        }
+      }
+    }
+    .photo {
+      display: flex;
+      flex-direction: column;
+      //position: sticky;
+      //top: 0;
+
+
+      align-self: start;
+      align-items: center;
+      flex-basis: 30%;
+      border: 1px solid $border-color;
+
+      .avatar {
+        width: 100%;
+
+        img {
+          
+          width: 100%;
+          height: 100%;
+          
+        }
+      }
+      .brief {
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        //flex-wrap: wrap;
+        width: 100%;
+        
+        padding: 10px;
+
+        .brief-item {
+          display: flex;
+          //justify-content: space-between;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid $border-color;
+          .col {
+            width: 50%;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+
+          &:last-child {
+            border-bottom: none;
+          }
+          
+          
+          
+        }
+        
+    }
+  }
+  }
+}
+// === / About ===
+
+// === Edication ===
+.section-edication {
+    
+  .container {
+    display: flex;
+
+    .edication__image {
+      width: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+    }
+    .description {
+      width: 50%;
+      margin-left: 30px;
+    }
+  }
+
+}
+// === / Edication ===
+
+// === Projects ===
+.section-projects {
+    
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    position: relative;
+
+    .item {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+
+
+
+
+      &:nth-child(odd) {
+          .container {
+              
+              display: flex;
+              flex-direction: column;
+              width: 50%;
+
+            .card {
+              display: flex;
+              flex-direction: column;
+              width: 90%;
+              
+
+              .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                border: 1px solid $border-color;
+                
+                .image {
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .description {
+                    width: 100%;
+    
+                }
+                .title {
+                    align-self: start;
+                    padding-right: 10px;
+                    font-size: 55px;
+                    margin-top: -30px;
+                }
+
+              }
+              .technologies {
+                display: flex;
+                padding: 20px;
+                border: 1px solid $border-color;
+                background-color: #f5f5f5;
+                
+                .fa-unity {
+                  font-size: 32px;
+                }
+                .flaticon-c-logo {
+                  
+                  &::before {
+                    font-size: 32px;
+                  }
+                }
+              }
+            }
+
+          }
+          .item-year {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              
+              width: 50%;
+  
+              .item-year__text {
+                  font-size: 30px;
+                  font-weight: 600;
+                  padding-left: 30px;
+                  border-left: 2px solid #000;
+                  z-index: 1;
+              }
+          }
+      }
+
+      &:nth-child(even) {
+
+        .container {
+              
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          order: 2;
+          width: 50%;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          
+
+          .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border: 1px solid $border-color;
+            
+            .image {
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .description {
+                width: 100%;
+
+            }
+            .title {
+                align-self: start;
+                padding-left: 10px;
+                font-size: 55px;
+                margin-top: -30px;
+            }
+
+          }
+          .technologies {
+            display: flex;
+            padding: 20px;
+            border: 1px solid $border-color;
+            background-color: #f5f5f5;
+          }
+        }
+
+        }
+
+        .item-year {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+          
+          width: 50%;
+
+          .item-year__text {
+              font-size: 30px;
+              font-weight: 600;
+              padding-right: 30px;
+              border-right: 2px solid #000;
+              z-index: 1;
+          }
+        }    
+      }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        //top: 0;
+        width: 2px;
+        height: 100%;
+        margin-left: -1px;
+        background-color: #e1e1e1;
+        z-index: 0;
+    }
+  }
+}
+
+// === / Projects ===
+
+// === Skills ===
+.section-skills {
+  background-color: $secondary-back-color;
+  color: $secondary-text-color;
+
+  .section-inner {
+    .loader-container {
+      display: flex;
+      //flex-direction: column;
+      flex-wrap: wrap;
+      //align-items: center;
+      
+  
+      .loader-item {
+        display: flex;
+        align-items: center;
+        flex-basis: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        //margin: 10px;
+        
+        .skill {
+          display: flex;
+          align-items: center;
+          padding-right: 10px;
+          width: 50%;
+          
+        }
+        .myProgress {
+          width: 100%;
+          background-color: grey;
+        }
+        
+        .myBar {
+          width: 1%;
+          height: 15px;
+          background-color: green;
+          
+        }
+      }
+    }
+  }
+
+
+
+  // .container {
+  //   display: flex;
+  //   .col{
+  //     display: flex;
+  //     flex-direction: column;
+  //     flex-basis: 50%;
+  //     margin-left: 20px;
+  //     margin-right: 20px;
+
+      // .row {
+      //   display: flex;
+      //   //justify-content: space-between;
+      //   align-items: center;
+      //   padding-top: 10px;
+      //   padding-bottom: 10px;
+      //   flex-wrap: wrap;
+      //   .r-item {
+      //     width: 50%;
+      //   }
+        // .header {
+        //   width: 50%;
+        // }
+        // .loader {
+        //   width: 50%;
+          
+          
+
+        //   #myProgress {
+        //     width: 100%;
+        //     background-color: grey;
+        //     height: 10px;
+        //   }
+          
+        //   #myBar {
+        //     width: 35%;
+        //     height: 10px;
+        //     background-color: green;
+        //   }
+        // }
+      //}
+   // }
+ // }
+}
+
+// === / Skills ===
