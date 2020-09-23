@@ -10,6 +10,7 @@ $secondary-decoraion-color: #3c763d;
 // === Mixins ===
 @mixin montserrat {
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 
 // === / Mixins ===
@@ -18,35 +19,64 @@ $secondary-decoraion-color: #3c763d;
 * {
   box-sizing: border-box;
 }
+html {
+  @include montserrat;
+}
 html,body {
   padding: 0;
   margin: 0;
-  @include montserrat;
-  
 }
 ul {
   list-style: none;
   margin: 0;
   padding: 0; 
 }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0;
+}
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+p {
+  margin-top: 0.65rem;
+  margin-bottom: 0.65rem;
+  line-height: 1.15;
+}
 a {
   text-decoration: none;
 }
 .section-outer {
-  padding-left: 40px;
-  padding-right: 40px;
-
+  padding-left: 2rem; // отступ слева
+  padding-right: 2rem; // // отступ справа 
 }
 .section-inner {
-    max-width: 1180px;
-    margin: 120px auto;
-    
+    max-width: 1180px; // макс ширина контентной области
+    margin: 4rem auto;  // марджин сверху и снизу  и выравнивание по центру
 }
 
-h2 {
+
+.section-title {
+    position: relative;
+    font-size: 2.15rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     
-    padding-bottom: 30px;
     text-align: center;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      height: 13px;
+      width: 113px;
+      margin: 0 auto;
+      background: url('../img/section-divider.webp'), no-repeat;
+    }
 }
 // === / Commons ===
 
@@ -55,7 +85,7 @@ h2 {
   
   position: sticky;
   top: 0;
-  height: 70px;
+  height: 4rem;
   background-color: #fff;
   z-index: 100;
   border-bottom: 1px solid $border-color; //можно тень забахать
@@ -65,14 +95,28 @@ h2 {
     justify-content: space-around;
     align-items: center;
     height: 100%;
+
+    li {
+      a {
+        font-size: 1.25rem;
+        font-weight: 600;
+
+        &:visited {
+          color: $primary-text-color;
+        }
+      }
+    }
   }
 }
 // === / Nvigation ===
 
 // === About ===
 .section-about {
-  
-  //background-image: url("../img/kekes.jpg");
+
+  //margin-top: 2rem;
+  //margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
   position: relative;
 
   .about-content {
@@ -82,18 +126,18 @@ h2 {
       display: flex;
       flex-direction: column;
       flex-basis: 70%;
-      padding-right: 50px;
+      padding-right: 5rem;
       
       
       .text {
-        padding-left: 20px;
+        padding-left: 1.25rem;
       }
       
       .interests {
         display: flex;
         flex-wrap: wrap-reverse;
         .interests-item {
-          padding-left: 20px;
+          padding-left: 1.25px;
           width: 50%;          
         }
       }
@@ -101,10 +145,6 @@ h2 {
     .photo {
       display: flex;
       flex-direction: column;
-      //position: sticky;
-      //top: 0;
-
-
       align-self: start;
       align-items: center;
       flex-basis: 30%;
@@ -114,10 +154,8 @@ h2 {
         width: 100%;
 
         img {
-          
           width: 100%;
           height: 100%;
-          
         }
       }
       .brief {
@@ -127,76 +165,53 @@ h2 {
         //flex-wrap: wrap;
         width: 100%;
         
-        padding: 10px;
+        padding: 0.6rem;
 
         .brief-item {
           display: flex;
           //justify-content: space-between;
-          padding-left: 20px;
-          padding-right: 20px;
-          padding-top: 10px;
-          padding-bottom: 10px;
+          padding-left: 1.25rem;
+          padding-right: 1.25rem;
+          padding-top: 0.6rem;
+          padding-bottom: 0.6rem;
           border-bottom: 2px solid $border-color;
           .col {
             width: 50%;
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 0.3rem;
+            padding-right: 0.3rem;
           }
 
           &:last-child {
             border-bottom: none;
           }
-          
-          
-          
         }
-        
     }
   }
   }
 }
 // === / About ===
 
-// === Edication ===
-.section-edication {
-    
-  .container {
-    display: flex;
-
-    .edication__image {
-      width: 50%;
-        img {
-          width: 100%;
-          height: 100%;
-        }
-    }
-    .description {
-      width: 50%;
-      margin-left: 30px;
-    }
-  }
-
-}
-// === / Edication ===
 
 // === Projects ===
 .section-projects {
     
+  
   .timeline {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     
     position: relative;
 
     .item {
         display: flex;
         flex-direction: row;
-        padding-left: 10px;
-        padding-right: 10px;
-
-
-
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
 
       &:nth-child(odd) {
           .container {
@@ -210,12 +225,11 @@ h2 {
               flex-direction: column;
               width: 90%;
               
-
               .content {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 20px;
+                padding: 1.25rem;
                 border: 1px solid $border-color;
                 
                 .image {
@@ -227,34 +241,32 @@ h2 {
                 }
                 .description {
                     width: 100%;
-    
                 }
                 .title {
                     align-self: start;
-                    padding-right: 10px;
-                    font-size: 55px;
-                    margin-top: -30px;
+                    padding-right: 0.75rem;
+                    font-size: 3.5rem;
+                    margin-top: -2rem;
                 }
-
               }
               .technologies {
                 display: flex;
-                padding: 20px;
+                padding: 1.25rem;
                 border: 1px solid $border-color;
                 background-color: #f5f5f5;
                 
                 .fa-unity {
-                  font-size: 32px;
+                  font-size: 2rem;
                 }
                 .flaticon-c-logo {
                   
                   &::before {
-                    font-size: 32px;
+                    font-size: 2rem;
+                    margin-left: 0;
                   }
                 }
               }
             }
-
           }
           .item-year {
               display: flex;
@@ -264,9 +276,9 @@ h2 {
               width: 50%;
   
               .item-year__text {
-                  font-size: 30px;
+                  font-size: 2rem;
                   font-weight: 600;
-                  padding-left: 30px;
+                  padding-left: 2rem;
                   border-left: 2px solid #000;
                   z-index: 1;
               }
@@ -293,7 +305,7 @@ h2 {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
+            padding: 1.25rem;
             border: 1px solid $border-color;
             
             .image {
@@ -305,19 +317,17 @@ h2 {
             }
             .description {
                 width: 100%;
-
             }
             .title {
                 align-self: start;
-                padding-left: 10px;
-                font-size: 55px;
+                padding-left: 0.75rem;
+                font-size: 5rem;
                 margin-top: -30px;
             }
-
           }
           .technologies {
             display: flex;
-            padding: 20px;
+            padding: 1.25rem;
             border: 1px solid $border-color;
             background-color: #f5f5f5;
           }
@@ -330,20 +340,18 @@ h2 {
           flex-direction: column;
           justify-content: center;
           align-items: flex-end;
-          
           width: 50%;
 
           .item-year__text {
-              font-size: 30px;
+              font-size: 2rem;
               font-weight: 600;
-              padding-right: 30px;
+              padding-right: 2rem;
               border-right: 2px solid #000;
               z-index: 1;
           }
         }    
       }
     }
-
     &::before {
         content: '';
         position: absolute;
@@ -357,7 +365,6 @@ h2 {
     }
   }
 }
-
 // === / Projects ===
 
 // === Skills ===
@@ -366,28 +373,27 @@ h2 {
   color: $secondary-text-color;
 
   .section-inner {
+
     .loader-container {
       display: flex;
-      //flex-direction: column;
       flex-wrap: wrap;
-      //align-items: center;
-      
-  
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+
       .loader-item {
         display: flex;
         align-items: center;
         flex-basis: 50%;
-        padding-right: 15px;
-        padding-left: 15px;
-        padding-bottom: 15px;
-        //margin: 10px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        
         
         .skill {
           display: flex;
           align-items: center;
-          padding-right: 10px;
-          width: 50%;
-          
+          padding-right: 0.75rem;
+          width: 50%; 
         }
         .myProgress {
           width: 100%;
@@ -396,58 +402,12 @@ h2 {
         
         .myBar {
           width: 1%;
-          height: 15px;
+          height: 1rem;
           background-color: green;
           
         }
       }
     }
   }
-
-
-
-  // .container {
-  //   display: flex;
-  //   .col{
-  //     display: flex;
-  //     flex-direction: column;
-  //     flex-basis: 50%;
-  //     margin-left: 20px;
-  //     margin-right: 20px;
-
-      // .row {
-      //   display: flex;
-      //   //justify-content: space-between;
-      //   align-items: center;
-      //   padding-top: 10px;
-      //   padding-bottom: 10px;
-      //   flex-wrap: wrap;
-      //   .r-item {
-      //     width: 50%;
-      //   }
-        // .header {
-        //   width: 50%;
-        // }
-        // .loader {
-        //   width: 50%;
-          
-          
-
-        //   #myProgress {
-        //     width: 100%;
-        //     background-color: grey;
-        //     height: 10px;
-        //   }
-          
-        //   #myBar {
-        //     width: 35%;
-        //     height: 10px;
-        //     background-color: green;
-        //   }
-        // }
-      //}
-   // }
- // }
 }
-
 // === / Skills ===

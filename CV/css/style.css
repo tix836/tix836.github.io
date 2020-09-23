@@ -1,35 +1,66 @@
 * {
   box-sizing: border-box; }
 
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; }
+
 html, body {
   padding: 0;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif; }
+  margin: 0; }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0; }
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+p {
+  margin-top: 0.65rem;
+  margin-bottom: 0.65rem;
+  line-height: 1.15; }
+
 a {
   text-decoration: none; }
 
 .section-outer {
-  padding-left: 40px;
-  padding-right: 40px; }
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
 .section-inner {
   max-width: 1180px;
-  margin: 120px auto; }
+  margin: 4rem auto; }
 
-h2 {
-  padding-bottom: 30px;
+.section-title {
+  position: relative;
+  font-size: 2.15rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   text-align: center; }
+  .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 13px;
+    width: 113px;
+    margin: 0 auto;
+    background: url("../img/section-divider.webp"), no-repeat; }
 
 .navigation {
   position: sticky;
   top: 0;
-  height: 70px;
+  height: 4rem;
   background-color: #fff;
   z-index: 100;
   border-bottom: 1px solid #eee; }
@@ -38,8 +69,15 @@ h2 {
     justify-content: space-around;
     align-items: center;
     height: 100%; }
+    .navigation .nav-links li a {
+      font-size: 1.25rem;
+      font-weight: 600; }
+      .navigation .nav-links li a:visited {
+        color: #282828; }
 
 .section-about {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
   position: relative; }
   .section-about .about-content {
     display: flex; }
@@ -47,14 +85,14 @@ h2 {
       display: flex;
       flex-direction: column;
       flex-basis: 70%;
-      padding-right: 50px; }
+      padding-right: 5rem; }
       .section-about .about-content .description .text {
-        padding-left: 20px; }
+        padding-left: 1.25rem; }
       .section-about .about-content .description .interests {
         display: flex;
         flex-wrap: wrap-reverse; }
         .section-about .about-content .description .interests .interests-item {
-          padding-left: 20px;
+          padding-left: 1.25px;
           width: 50%; }
     .section-about .about-content .photo {
       display: flex;
@@ -73,42 +111,35 @@ h2 {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 10px; }
+        padding: 0.6rem; }
         .section-about .about-content .photo .brief .brief-item {
           display: flex;
-          padding-left: 20px;
-          padding-right: 20px;
-          padding-top: 10px;
-          padding-bottom: 10px;
+          padding-left: 1.25rem;
+          padding-right: 1.25rem;
+          padding-top: 0.6rem;
+          padding-bottom: 0.6rem;
           border-bottom: 2px solid #eee; }
           .section-about .about-content .photo .brief .brief-item .col {
             width: 50%;
-            padding-left: 5px;
-            padding-right: 5px; }
+            padding-left: 0.3rem;
+            padding-right: 0.3rem; }
           .section-about .about-content .photo .brief .brief-item:last-child {
             border-bottom: none; }
-
-.section-edication .container {
-  display: flex; }
-  .section-edication .container .edication__image {
-    width: 50%; }
-    .section-edication .container .edication__image img {
-      width: 100%;
-      height: 100%; }
-  .section-edication .container .description {
-    width: 50%;
-    margin-left: 30px; }
 
 .section-projects .timeline {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   position: relative; }
   .section-projects .timeline .item {
     display: flex;
     flex-direction: row;
-    padding-left: 10px;
-    padding-right: 10px; }
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
     .section-projects .timeline .item:nth-child(odd) .container {
       display: flex;
       flex-direction: column;
@@ -121,7 +152,7 @@ h2 {
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding: 20px;
+          padding: 1.25rem;
           border: 1px solid #eee; }
           .section-projects .timeline .item:nth-child(odd) .container .card .content .image img {
             width: 100%;
@@ -130,27 +161,28 @@ h2 {
             width: 100%; }
           .section-projects .timeline .item:nth-child(odd) .container .card .content .title {
             align-self: start;
-            padding-right: 10px;
-            font-size: 55px;
-            margin-top: -30px; }
+            padding-right: 0.75rem;
+            font-size: 3.5rem;
+            margin-top: -2rem; }
         .section-projects .timeline .item:nth-child(odd) .container .card .technologies {
           display: flex;
-          padding: 20px;
+          padding: 1.25rem;
           border: 1px solid #eee;
           background-color: #f5f5f5; }
           .section-projects .timeline .item:nth-child(odd) .container .card .technologies .fa-unity {
-            font-size: 32px; }
+            font-size: 2rem; }
           .section-projects .timeline .item:nth-child(odd) .container .card .technologies .flaticon-c-logo::before {
-            font-size: 32px; }
+            font-size: 2rem;
+            margin-left: 0; }
     .section-projects .timeline .item:nth-child(odd) .item-year {
       display: flex;
       flex-direction: column;
       justify-content: center;
       width: 50%; }
       .section-projects .timeline .item:nth-child(odd) .item-year .item-year__text {
-        font-size: 30px;
+        font-size: 2rem;
         font-weight: 600;
-        padding-left: 30px;
+        padding-left: 2rem;
         border-left: 2px solid #000;
         z-index: 1; }
     .section-projects .timeline .item:nth-child(even) .container {
@@ -167,7 +199,7 @@ h2 {
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding: 20px;
+          padding: 1.25rem;
           border: 1px solid #eee; }
           .section-projects .timeline .item:nth-child(even) .container .card .content .image img {
             width: 100%;
@@ -176,12 +208,12 @@ h2 {
             width: 100%; }
           .section-projects .timeline .item:nth-child(even) .container .card .content .title {
             align-self: start;
-            padding-left: 10px;
-            font-size: 55px;
+            padding-left: 0.75rem;
+            font-size: 5rem;
             margin-top: -30px; }
         .section-projects .timeline .item:nth-child(even) .container .card .technologies {
           display: flex;
-          padding: 20px;
+          padding: 1.25rem;
           border: 1px solid #eee;
           background-color: #f5f5f5; }
     .section-projects .timeline .item:nth-child(even) .item-year {
@@ -191,9 +223,9 @@ h2 {
       align-items: flex-end;
       width: 50%; }
       .section-projects .timeline .item:nth-child(even) .item-year .item-year__text {
-        font-size: 30px;
+        font-size: 2rem;
         font-weight: 600;
-        padding-right: 30px;
+        padding-right: 2rem;
         border-right: 2px solid #000;
         z-index: 1; }
   .section-projects .timeline::before {
@@ -211,23 +243,25 @@ h2 {
   color: #fff; }
   .section-skills .section-inner .loader-container {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
     .section-skills .section-inner .loader-container .loader-item {
       display: flex;
       align-items: center;
       flex-basis: 50%;
-      padding-right: 15px;
-      padding-left: 15px;
-      padding-bottom: 15px; }
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 1rem; }
       .section-skills .section-inner .loader-container .loader-item .skill {
         display: flex;
         align-items: center;
-        padding-right: 10px;
+        padding-right: 0.75rem;
         width: 50%; }
       .section-skills .section-inner .loader-container .loader-item .myProgress {
         width: 100%;
         background-color: grey; }
       .section-skills .section-inner .loader-container .loader-item .myBar {
         width: 1%;
-        height: 15px;
+        height: 1rem;
         background-color: green; }
