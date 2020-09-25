@@ -50,56 +50,58 @@
         <h3>Интересы и увлечения</h3>
         <ul class="interests">
           <li class="interests-item">
-            <i class="fas fa-gamepad"></i>
+            <i class="fas fa-fw fa-lg fa-gamepad"></i>
             <span class="interests-item__text">Игры</span> 
           </li>
           <li class="interests-item">
-            <i class="fas fa-book-reader"></i>
+            <i class="fas fa-fw fa-lg fa-book-reader"></i>
             <span class="interests-item__text">Книги</span>
           </li>
           <li class="interests-item">
-            <i class="fas fa-film"></i>
+            <i class="fas fa-fw fa-lg fa-film"></i>
             <span class="interests-item__text"> Фильмы</span>
           </li>
           <li class="interests-item">
-            <i class="fas fa-keyboard"></i>
-            <!--<i class="fas fa-laptop"></i>-->
+            <i class="fas fa-fw fa-lg fa-keyboard"></i>
             <span class="interests-item__text">Программирование</span>
           </li>
           <li class="interests-item">
-            <i class="far fa-grin-tongue"></i>
+            <i class="fas fa-fw fa-lg fa-flag-usa"></i>
+            
             <span class="interests-item__text">Английский язык</span>
           </li>
         </ul>
         <h3>Образование</h3>
         <div class="text">
-          Новосибирский государственный технический университет, студент факультета прикладной математики и информатики кафедра прикладной математики
+          <p>Новосибирский государстенный технический университет <br>
+             Факультет прикладной математики и информатики <br>
+             Кафедра прикладной математики</p>
         </div>
         <h3>Ресурсы для самостоятельного обучения</h3>
         <ul class="interests">
           <li class="interests-item">
-            <i class="fas fa-gamepad"></i>
+            <i class="fas fa-fw fa-gamepad"></i>
             <span class="interests-item__text">LearnJavaScript</span> 
           </li>
           <li class="interests-item">
-            <i class="fas fa-book-reader"></i>
+            <i class="fas fa-fw fa-book-reader"></i>
             <span class="interests-item__text">Просто: Разработка</span>
           </li>
           <li class="interests-item">
-            <i class="fas fa-film"></i>
+            <i class="fas fa-fw fa-film"></i>
             <span class="interests-item__text"> https://www.w3schools.com/ </span>
           </li>
           <li class="interests-item">
-            <i class="fas fa-keyboard"></i>
+            <i class="fas fa-fw fa-keyboard"></i>
             <!--<i class="fas fa-laptop"></i>-->
             <span class="interests-item__text">https://habr.com/ru/</span>
           </li>
           <li class="interests-item">
-            <i class="far fa-grin-tongue"></i>
+            <i class="fab fa-fw fa-lg fa-chrome"></i>
             <span class="interests-item__text">Код кэмп</span>
           </li>
           <li class="interests-item">
-            <i class="far fa-grin-tongue"></i>
+            <i class="far fa-fw fa-grin-tongue"></i>
             <span class="interests-item__text">https://developer.mozilla.org/ru/</span>
           </li>
         </ul>
@@ -132,20 +134,6 @@
 </section>
 <!--/ about-->
 
-<!--edication-->
-<!-- <section id="Edication" class="section-outer section-edication ">
-  <section class="section-inner">
-      <h2 class="section-title"> Образование</h2>
-    <div class="container">
-      <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda modi recusandae, alias laboriosam consequuntur incidunt! Sed eveniet odit asperiores praesentium recusandae? Iure et doloribus maiores tempore dolorem magnam ea quod!</div>
-      <div class="edication__image">
-        <img src="img/NSTU.jpg" alt="">
-      </div>
-    </div>
-  </section>
-</section> -->
-<!--/edication-->
-
 <!--projects-->
 <section id="Projects" class="section-projects section-outer">
   <section class="section-inner">
@@ -158,26 +146,38 @@
               <div class="image">
                 <img src="img/first game.png" alt="first_game">
               </div>
-                <div class="title">Первая игра</div>
-                <div class="description">
-                  <p>Что это?</p>
-                  <p>Должна была получится изометрическая рпг игра чем-то напоминающая fallout 1.
-                    Однако некоторые уровни представляли собой классический платформер по типу Марио.
-                    Суть была в резком переключении режима изометрии и обычного 2д</p>
-                    <p>Что вышло?</p>
-                    <p>В итоге получился 2д спрайт, который бегает по полянке и от стыда пытается спрятатся за деревьями :)</p>
-                    <p>Статус: Заброшен</p>
-                    <p>Итог</p>
-                    <p>На память об игре остался скриншот сомнительного качества</p>
-                    <p>Разработку планировалось вести в команде.
-                      В связи с этим я немного познакомился с git</p>
-                    <p>А еще я понял, что мне нравится явно видеть работу своего кода</p>
-                    <p>Бегающий человечек - это весело</p>
+              <div class="title">Первая игра</div>
+              <div class="description">
+                <div class="project-info project-section ">
+                  <strong class="question">Что это?</strong>
+                  <p>
+                    Должна была получится изометрическая рпг игра чем-то напоминающая fallout 1.
+                    <br> Однако некоторые уровни представляли собой классический платформер по типу Марио.
+                  </p>
                 </div>
+                <div class="project-dev project-section">
+                  <strong class="question">Что вышло?</strong>
+                  <p>
+                    В итоге получился спрайт, который бегает по полянке и от стыда пытается спрятатся за деревьями :)
+                  </p>
+                </div>
+                <div class="project-status project-section">
+                <strong class = "question">Статус:</strong>
+                  <span class="status-denayed">Отложен</span>
+                
+                </div>
+                <div class="project-result project-section">
+                  <strong class="question">Итог</strong>
+                  <p>На память об игре остался скриншот сомнительного качества</p>
+                  <p>
+                    Разработку планировалось вести в команде. В связи с этим я немного познакомился с git
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="technologies">
-              <i class="fab fa-2x fa-fw fa-git"></i>
-              <i class="fab fa-2x fa-fw fa-unity"></i>
+              <i class="fab fa-2x fa-fw fa-git" title="Git"></i>
+              <i class="fab fa-2x fa-fw fa-unity" title="Unity"></i>
             </div>
           </div>
         </div>
@@ -194,42 +194,63 @@
               </div>
                 <div class="title">Новостной сайт</div>
                 <div class="description">
-                  <p>Что это?</p>
-                  <p>Университетский проект по выбору, начатый в начале третьего курса под руковдоством преподавателя</p>
-                  <p>Мой первый проект связанный с вебом</p>
-                  <p>Разработка шла в несколько этапов:</p>
-                  <ol>
-                    <li>Верстка HTML5, CSS3</li>
-                    <li>Краткое знакомство с php, XAMPP и mysql
-                      <ol>
-                        <li>Реализация возможности добавления, редактирования и удаления новостей</li>
-                        <li>Подгрузка новостей из базы данных</li>
-                        <li>Создание панели администратора</li>
-                      </ol>
-                    </li>
-                    <li>Знакомство c Bootstrap4, создание адаптивной верстки</li>
-                    <li>Создание темы Wordpress из верстки</li>
-                  </ol>
-                  <p>Статус: Завершен</p>
-                  <p>Итог:</p>
-                  <p>Поверхностно познакомился с основами веб разработки.
-                    Все кажется непонятным, но я хочу разобраться.</p>
-                    <p>Нужно будет потрогать JS</p>
 
-                    <p>Ознакомится можно здесь:</p>
-                    <ul>
-                      <li><a href="#">HTML CSS</a></li>
-                      <li><a href="#">Адаптив</a></li>
-                      <li><a href="#">Wordpress</a></li>
-                    </ul>
+                  <div class="project-section project-info">
+                    
+                      <strong class="question">Что это?</strong>
+                    
+                    <p  >Университетский проект по выбору, начатый в начале третьего курса под руковдоством преподавателя</p>
+                    <p >Мой первый проект связанный с вебом</p>
+                  </div>
+                  <div class="project-section project-dev">
+                    
+                      <strong class="question">Что вышло?</strong>
+                    
+                    <p class="description-text">Разработка шла в несколько этапов:</p>
+                    <ol>
+                      <li>Дизайн и верстка макета посредством HTML5, CSS3</li>
+                      <li>Краткое знакомство с php, XAMPP и mysql
+                        <ol class="phases-roman">
+                          <li>Реализация возможности добавления, редактирования и удаления новостей</li>
+                          <li>Подгрузка новостей из базы данных</li>
+                          <li>Создание панели администратора</li>
+                        </ol>
+                      </li>
+                      <li>Cоздание адаптивной верстки посредством Bootstrap4</li>
+                      <li>Создание темы Wordpress на основе верстки из пункта 1</li>
+                    </ol>
+                  </div>
+                  <div class="project-section projects-status">
+                    <strong class="question">Статус:</strong>
+                    <span class="status-completed">Завершен</span>                    
+                  </div>
+                  <div class="project-section project-result">
+                    
+                      <strong class="question">Итог:</strong>
+                    
+                    <p>
+                      <span>Поверхностно познакомился с основами веб разработки.</span>
+                    </p>
+                  </div>
+                   <div class="seeMore">
+                      <p>
+                        <em>Ознакомится можно здесь:</em>
+                      </p>
+                      <ul>
+                        <li><a href="#">HTML CSS</a></li>
+                        <li><a href="#">Адаптив</a></li>
+                        <li><a href="#">Wordpress</a></li>
+                      </ul>
+                   </div>
                 </div>
             </div>
             <div class="technologies">
-              <i class="fab fa-2x fa-fw fa-html5"></i>
-              <i class="fab fa-2x fa-fw fa-css3-alt"></i>
-              <i class="fab fa-2x fa-fw fa-php"></i>
-              <i class="fas fa-2x fa-fw fa-database"></i>
-              <i class="fab fa-2x fa-fw fa-bootstrap"></i>
+              <i class="fab fa-2x fa-fw fa-html5" title="HTML5"></i>
+              <i class="fab fa-2x fa-fw fa-css3-alt" title="CSS3"></i>
+              <i class="fab fa-2x fa-fw fa-php" title="PHP"></i>
+              <i class="fas fa-2x fa-fw fa-database" title="MySQL"></i>
+              <i class="fab fa-2x fa-fw fa-bootstrap" title="Bootstrap"></i>
+              <i class="fab fa-2x fa-fw fa-wordpress" title="Wordpress"></i>
             </div>
           </div>
         </div>
@@ -246,22 +267,41 @@
               </div>
                 <div class="title">Калькулятор сметы</div>
                 <div class="description">
-                  <p>Что это?</p>
-                  <p>Калькулятор сметы услуг по ремонту помещений.
-                    Облегченный аналог экселя, почти не требующий времени на освоение.
-                    Начат в попытке облегчить жизнь родственника</p>
+                  <div class="project-section project-info">
+                    
+                      <strong class="question">Что это?</strong>
+                    
+                    <p>Калькулятор сметы услуг по ремонту помещений.
+                      Облегченный аналог экселя, почти не требующий времени на освоение.
+                    </p>
                     <p>Разработка велась в команде с другом</p>
-                    <p>Статус: Заброшен</p>
-                    <p>Итог:</p>
-                    <p>XAML это как HTML только строже</p>
-                    <p>Написать что-то действительно удобное оказалось не так просто)</p>
-                    <p>А еще мы уперлись рогом в MVVM паттерн</p>
-                    <p>Знакомство с WPF было полезным</p>
-                    <p>Ознакомиться можно тут</p>
+                  </div>
+                  <div class="project-section project-dev">
+                    
+                  <strong class="question">Что вышло?</strong>
+                    
+                    <p>Реализовать прототип интерфейса приложения</p>
+                    <p>Частично реализовать функционал</p>
+                    <p>Частично ознакомиться с MVVM паттерном</p>
+                  </div>
+                  <div class="project-section projects-status">
+                    <strong class="question">Статус:</strong>
+                    <span class="status-denayed">Отложен</span>
+                    
+                  </div>
+                  <div class="project-section project-result">                    
+                    <strong class="question" >Итог:</strong>                    
+                    <span>Знакомство с WPF</span>
+                  </div>
+                  <div class="seeMore">
+                    <p>
+                      <em>Ознакомится можно здесь:</em> <a href="https://github.com/tix836/Gog">Калькулятор</a>
+                    </p>
+                  </div>
                 </div>
             </div>
             <div class="technologies">
-              <i class="flaticon-c-logo"></i>
+              <i class="flaticon-c-logo" title="C#"></i>
             </div>
           </div>
         </div>
@@ -278,32 +318,49 @@
               </div>
                 <div class="title">Лендинг</div>
                 <div class="description">
-                  <p>Что это?</p>
-                  <p>Попытка углубить свои знания в верстке и немного попрактиковать JS, сделав адаптивный лендинг на основе другого сайта</p>
-                  <p>Статус: В разработке</p>
-                  <p>Что уже получилось?</p>
-                  <p>На данный момент верстка почти готова, реализована адаптивность, изначальный дизайн немного изменен. Работают некоторые кнопки</p>
-                  <p>Что планируется?</p>
-                  <ul>
-                    <li>Доработка верстки</li>
-                    <li>Знакомство с кроссбраузерностью</li>
-                    <li>Переработка контента</li>
-                    <li>Хочу разобраться с анимациями</li>
-                    <li>Возможно переделать все на бутстрапе</li>
-                    <li>Возможно сделать тему вордпресс из верстки</li>
-                  </ul>
-                  <p>Итог:</p>
-                    <ul>
-                      <li>Я начал комфортнее чувствовать себя при работе с flexbox</li>
-                      <li>Узнал что такое паралакс эффект</li>
-                      <li>Понял как реализовывается адаптивность</li>
-                      <li>Узнал что такое гамбургер меню</li>
-                      <li>Разобрался с псведоклассами</li>
-                      <llii>Попытался сверстать таймлайн(получилось так себе)</li>
-                      <li>Оказывается всегда можно изменить дизайн и не верстать таймлайн</li>
-                      <li>Понажимал на кнопки в JS</li>
-                      <li>Еще мне сильно понравилсь "звонилка" (&lt;a href = "tel...) :)</li>
-                    </ul>
+                    <div class="project-section project-info">                      
+                      <strong class="question">Что это?</strong>                      
+                      <p>
+                        Попытка углубить свои знания в верстке, сделав адаптивный лендинг на основе другого сайта
+                      </p>
+                    </div>                  
+                    <div class="project-section project-dev">  
+                      <strong class="question">Что вышло?</strong>
+                      <p>Изменен первоначальный дизайн</p>
+                      <p>Верстка готова на 90%</p>
+                      <p>Реализована адаптивность</p>
+                      <p>Работают некоторые кнопки</p>
+                    </div>                  
+                    <div class="project-section projects-status">
+                      <strong class="class="question>Статус:</strong>
+                      <span class="status-develop">В разработке</span>
+                    </div>
+                  <div class="project-section project-plans">                    
+                      <strong class="question">Что планируется?</strong>                                    
+                      <p>Доработка верстки</p>
+                      <p>Знакомство с кроссбраузерностью</p>
+                      <p>Переработка контента</p>
+                      <p>Работа с анимациями</p>
+                      <p>Возможно переделать верстку на бутстрапе</p>
+                      <p>Возможно сделать вордпресс тему на основе верстки</p>
+                  </div>
+                   <div class="project-section project-dev">
+                      <strong class="question">Итог:</strong>
+                      <p>Я начал комфортнее чувствовать себя при работе с flexbox</p>
+                      <p>Узнал что такое паралакс эффект</p>
+                      <p>Понял как реализовывается адаптивность</p>
+                      <p>Узнал что такое гамбургер меню</p>
+                      <p>Разобрался с псведоклассами</p>
+                      <p>Попытался сверстать таймлайн(получилось так себе)</p>
+                      <p>Оказывается всегда можно изменить дизайн и не верстать таймлайн</p>
+                      <p>Понажимал на кнопки в JS</p>
+                      <p>Еще мне сильно понравилсь "звонилка" (&lt;a href = "tel...) :)</p>
+                   </div>
+                   <div class="seeMore">
+                    <p>
+                      <em>Ознакомится можно здесь:</em> <a href="https://github.com/tix836/tix836.github.io/tree/master/Renovations">Home Renovations</a>
+                    </p>
+                  </div>
                 </div>
             </div>
             <div class="technologies">
@@ -336,8 +393,9 @@
           <div class="skill_name">HTML5</div>
         </div>
         <div class="myProgress">
-          <div class="myBar"></div>
+          <div class="myBar" data-width="42"></div>
         </div>
+        <span class="loader-title">42%</span>
       </div>
       <div class="loader-item">
         <div class="skill">
@@ -345,8 +403,9 @@
           <div class="skill_name">CSS3</div>
         </div>
         <div class="myProgress">
-          <div class="myBar"></div>
+          <div class="myBar" data-width="25" ></div>
         </div>
+        <span class="loader-title">25%</span>
       </div>
       <div class="loader-item">
         <div class="skill">
@@ -354,8 +413,90 @@
           <div class="skill_name">JavaScript</div>
         </div>
         <div class="myProgress">
-          <div class="myBar"></div>
+          <div class="myBar" data-width="70" ></div>
         </div>
+        <span class="loader-title">42%</span>
+      </div>
+      <div class="loader-item">
+        <div class="skill">
+          <i class="fab fa-2x fa-fw fa-php"></i>
+          <div class="skill_name">PHP</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar" data-width="70" ></div>
+        </div>
+        <span class="loader-title">42%</span>
+      </div>
+      <div class="loader-item">
+        <div class="skill">
+          <i class="fab fa-2x fa-fw fa-bootstrap"></i>
+          <div class="skill_name">Bootstrap</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar" data-width="70" ></div>
+        </div>
+        <span class="loader-title">42%</span>
+      </div>
+      <div class="loader-item">
+        <div class="skill">
+          <i class="fab fa-2x fa-fw fa-git"></i>
+          <div class="skill_name">Git</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar" data-width="70" ></div>
+        </div>
+        <span class="loader-title">42%</span>
+      </div>
+      <div class="loader-item">
+        <div class="skill">
+          <i class="fab fa-2x fa-fw fa-unity"></i>
+          <div class="skill_name">Unity</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar" data-width="70" ></div>
+        </div>
+        <span class="loader-title">42%</span>
+      </div>
+      
+      <div class="loader-item">
+        <div class="skill">
+          <i class="fas fa-2x fa-fw fa-database"></i>
+          <div class="skill_name">MySQL</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar" data-width="70" ></div>
+        </div>
+        <span class="loader-title">42%</span>
+      </div>
+      <div class="loader-item">
+        <div class="skill">
+          <i class="fab fa-2x fa-fw fa-sass"></i>
+          <div class="skill_name">Saas</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar" data-width="70" ></div>
+        </div>
+        <span class="loader-title">42%</span>
+      </div>
+      <div class="loader-item">
+        <div class="skill">
+          <i class="fab fa-2x fa-fw fa-gulp"></i>
+          <div class="skill_name">Gulp</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar" data-width="70" ></div>
+        </div>
+        <span class="loader-title">42%</span>
+      </div>
+      <div class="loader-item">
+        <div class="skill">
+          <i class="fab fa-2x fa-fw fa-wordpress"></i>
+          <div class="skill_name">Wordpress</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar" data-width="70" ></div>
+        </div>
+        <span class="loader-title">42%</span>
       </div>
     </div>
 
@@ -363,20 +504,10 @@
 </section>
 <!--/skills-->
 
-<!--learning-->
-<!-- <section id="Learning" class="section-learning section-outer">
-  <section class="section-inner">
-    <h2 class="section-title">Мое обучение</h2>
-  </section>
-</section> -->
-<!--/learning-->
-
-
-
-
   
     <!--FontAwesome icons-->
     <script src="https://kit.fontawesome.com/2a076becfb.js" crossorigin="anonymous"></script>
+    <script src="progressBars.js"></script>
    
   </body>
 </html>
