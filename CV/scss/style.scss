@@ -22,6 +22,7 @@ $screen-lg-max: 1199px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 450;
+    color: $primary-text-color;
     //text-shadow: -1px -1px 1px rgba(101, 96, 80, 0.36);
 }
 // === / Mixins ===
@@ -42,9 +43,15 @@ body {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    //background-color: rgba(0, 0, 0, 0.3);
+    
 }
 
+.wrapper {
+    // background-image:
+    // linear-gradient(to top,rgba(110, 117, 168, 0.4), rgba(110, 117, 168, 0.4)), 
+    // url(/img/25100.jpg);
+    // background-repeat: repeat-y;
+}
 ul {
     list-style: none;
     margin: 0;
@@ -79,13 +86,16 @@ a {
 }
 
 .section-outer {
+
+    background-repeat: repeat;
     padding-left: 1.5rem; // отступ слева
-    padding-right: 1.5rem; // // отступ справа 
+    padding-right: 1.5rem; // // отступ справа
+     
 }
 
 .section-inner {
     max-width: 1180px; // макс ширина контентной области
-    margin: 4rem auto; // марджин сверху и снизу  и выравнивание по центру
+    margin: 0 auto; // марджин сверху и снизу  и выравнивание по центру
 }
 
 //=== Icons ===//
@@ -241,6 +251,8 @@ a {
             align-items: center;
             flex-basis: 30%;
             border: 1px solid $border-color;
+            //background-color: rgb(237, 237, 253);
+            background-color: #fff;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             .avatar {
                 width: 100%;
@@ -263,7 +275,7 @@ a {
                     padding-right: 1.25rem;
                     padding-top: 0.6rem;
                     padding-bottom: 0.6rem;
-                    border-bottom: 2px solid $border-color;
+                    border-bottom: 1px solid #7e818b;
                     .col {
                         width: 50%;
                         padding-left: 0.3rem;
@@ -310,6 +322,8 @@ a {
 
 // === Projects ===
 .section-projects {
+
+    //background-repeat: no-repeat;
     .timeline {
         display: flex;
         flex-direction: column;
@@ -317,9 +331,11 @@ a {
         padding-top: 4rem;
         padding-bottom: 4rem;
         position: relative;
+        margin-bottom: 8rem;
+
         .item {
             display: flex;
-            flex-direction: row;
+            flex-direction: row;            
             padding-left: 0.75rem;
             padding-right: 0.75rem;
             margin-bottom: 3rem;
@@ -327,10 +343,12 @@ a {
             .container {
                 display: flex;
                 flex-direction: column; 
-                width: 50%;
+                width: 50%;                
                 .card {
                     display: flex;
                     flex-direction: column;
+                    //background-color: #EDEDFD;
+                    background-color: #fff;
                     width: 90%;
                     .content {
                         display: flex;
@@ -365,11 +383,13 @@ a {
                     }
                 }
             }
-            .item-year {
+            .item-year {                
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 width: 50%;
+                
+                
 
                 .item-year__text {
                     font-weight: 600;
@@ -536,7 +556,7 @@ a {
                 height: 100%;
                 margin-left: -1px;
                 background-color: #e1e1e1;
-                z-index: 0;
+                z-index: 1;
             }
         }
     }
@@ -551,7 +571,8 @@ a {
         .item-container {
             display: flex;
             flex-wrap: wrap;
-            align-items: flex-end;
+            align-items: center;
+            padding-bottom: 8rem;
             
             .item {
                 display: flex;
@@ -562,19 +583,28 @@ a {
                 margin-top: 1rem;
                 margin-bottom: 1rem;
 
-                .icon-title {
-                    margin-top: 0.5rem;
-                }
-                .icon-container {
+
+                .item-content {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    width: 50%;
+                    justify-content: center;
 
-                    img {
-                        width: 100%;                        
+                    .icon-container {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;                    
+    
+                        img {
+                            width: 100%;;                        
+                        }
+                    }
+                    .icon-title {
+                        margin-top: 0.5rem;
                     }
                 }
+
+
             }
         }
         @media (max-width: $screen-sm ) {
