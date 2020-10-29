@@ -1,0 +1,39 @@
+﻿  Source.cpp
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\LOS.h(60,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\LOS.h(143,10): warning C4101: normF: неиспользованная локальная переменная
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(100,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(102,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(144,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(146,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(262,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(267,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(277,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(298,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(333,33): error C2065: i: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(333,50): error C2065: i: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(334,33): error C2065: i: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(334,48): error C2065: i: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(341,43): error C2065: delta_t: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(341,87): error C2065: delta_t: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(344,38): error C2065: i: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(344,42): error C2660: Global_B: функция не принимает 1 аргументов
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(190,16): message : см. объявление "Global_B"
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(348,17): error C2065: delta_t: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(348,50): error C2065: i: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(348,99): error C2065: i: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(348,121): error C2065: delta_t: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(348,156): error C2065: i: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(348,227): error C2065: i: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(348,242): error C2065: i: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(352,49): error C2065: i: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(352,51): error C2660: Conditions: функция не принимает 3 аргументов
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(203,6): message : см. объявление "Conditions"
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(354,5): error C2065: i: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(358,9): error C2065: grid_time: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(358,20): error C2065: grid_space: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(358,32): error C2065: U: необъявленный идентификатор
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(358,33): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(358,2): error C2365: output: переопределение; предыдущим определением было "функция"
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(258): message : см. объявление "output"
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(359,1): error C2059: синтаксическая ошибка: }
+C:\Users\Антон\source\repos\CURSACH2_UMF\CURSACH2_UMF\Source.cpp(359,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
